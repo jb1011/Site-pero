@@ -1,0 +1,44 @@
+img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+}
+
+.exp:hover img {
+    opacity: 0.3;
+}
+
+.exp img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+
+.img-description-drip {
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.img:hover .img-description-drip {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "id": 0,
+        "title": "Dripperz",
+        "date": "1 month",
+        "description": "UI and Web3 implementation.",
+        "site": "https://dripperzcyber.club//"
+       
+    },
+    {
+        "id": 1,
+        "title": "Pangolin Exchange",
+        "date": "6 months",
+        "description": "Cross chain implementation for the decentralized exchange. Airdrop feature implementation. APIs implementation. UI maintenance. Wormhole bridge/ Axelar bridge implementation.",
+        "site": "https://pangolin.exchange/"
+    },
+    {
+        "id": 2,
+        "title": "Farandole",
+        "date": "2 months",
+        "description": "Web3 calls, UI implementation, website responsivity.",
+        "site": "https://www.farandole.io//"
+    },
+    {
+        "id": 3,
+        "title": "Hyro - Hackaton project",
+        "date": "48 hours",
+        "description": "This unfinished project was a very ambitious project for the Ethcc hackathon 2022.",
+        "site": "https://hyro-six.vercel.app/"
+    }
+]

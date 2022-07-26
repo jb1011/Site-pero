@@ -1,0 +1,39 @@
+.center-page-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.circle {
+    stroke-width: clamp(20px, 10vw + 10px, 30%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+    background-color: #fca311;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pulse {
+    animation: pulse-animation linear 20s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(252, 163, 17, 0.3)
+    }
+
+    50% {
+        box-shadow: 0 0 0 300px rgba(252, 163, 17, 0.3)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0px rgba(252, 163, 17, 0.3);
+    }
+}

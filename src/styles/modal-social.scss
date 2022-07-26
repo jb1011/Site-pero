@@ -1,0 +1,25 @@
+.layout {
+    background-color: rgba(20, 33, 61, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(50%, 700px, 90%);
+    height: min(50%, 300px);
+    background-color: #14213d;
+    border: 1px solid #fca311;
+    z-index: 100;
+}
+
+.color-icon {
+    color: #fca311;
+}

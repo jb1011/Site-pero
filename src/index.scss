@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Raleway:wght@400;800&display=swap');
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #14213d;
+}
+
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 5rem;
+  color: #e5e5e5;
+}
+
+h2 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 3rem;
+  color: #e5e5e5;
+}
+
+h3 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2rem;
+  color: #e5e5e5;
+}
+
+p {
+  font-family: 'Lobster Two', cursive;
+  font-size: 1rem;
+  color: #e5e5e5;
+}
+
+.center-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.center-simple-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

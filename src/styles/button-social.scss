@@ -1,0 +1,35 @@
+.circle-small {
+    margin: 0 20px 50px 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #fca311;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.pulse-small {
+    animation: pulse-animation-small linear 8s infinite;
+}
+
+@keyframes pulse-animation-small {
+    0% {
+        box-shadow: 0 0 0 0px rgba(252, 163, 17, 0.3)
+    }
+
+    50% {
+        box-shadow: 0 0 0 20px rgba(252, 163, 17, 0.3)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0px rgba(252, 163, 17, 0.3);
+    }
+}
