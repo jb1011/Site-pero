@@ -13,6 +13,9 @@ function Skills() {
     inView ? document.getElementById('ethersjs').classList.add("circle-EthersJs") : document.getElementById('ethersjs').classList.add(undefined)
     inView ? document.getElementById('web3').classList.add("circle-Web3") : document.getElementById('web3').classList.add(undefined)
     inView ? document.getElementById('c').classList.add("circle-C") : document.getElementById('c').classList.add(undefined)
+    inView ? document.getElementById('react').classList.add("circle-react") : document.getElementById('react').classList.add(undefined)
+    inView ? document.getElementById('vue').classList.add("circle-vue") : document.getElementById('vue').classList.add(undefined)
+
   }
 
   return (
@@ -22,6 +25,18 @@ function Skills() {
       <InView as='div' onChange={(inView) => triggerAnim(inView)}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <div className='container__progressbars'>
+            <div className="progressbar">
+              <svg className="progressbar__svg">
+                <circle id='react' cx="80" cy="80" r="70" className="progressbar__svg-circle shadow-html"> </circle>
+              </svg>
+              <span className="progressbar__text shadow-html">REACT</span>
+            </div>
+            <div className="progressbar">
+              <svg className="progressbar__svg">
+                <circle id='vue' cx="80" cy="80" r="70" className="progressbar__svg-circle shadow-html"> </circle>
+              </svg>
+              <span className="progressbar__text shadow-html">VUE</span>
+            </div>
             <div className="progressbar">
               <svg className="progressbar__svg">
                 <circle id='html' cx="80" cy="80" r="70" className="progressbar__svg-circle shadow-html"> </circle>
@@ -56,7 +71,7 @@ function Skills() {
               <svg className="progressbar__svg">
                 <circle id='ethersjs' cx="80" cy="80" r="70" className="progressbar__svg-circle shadow-html"> </circle>
               </svg>
-              <span className="progressbar__text shadow-html">EthersJs</span>
+              <span style={{textAlign: 'center'}} className="progressbar__text shadow-html">ETHERS-JS</span>
             </div>
             <div className="progressbar">
               <svg className="progressbar__svg">

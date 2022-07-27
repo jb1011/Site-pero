@@ -9,6 +9,7 @@ $porcent-node: 85;
 $porcent-react: 90;
 $porcent-Web3: 80;
 $porcent-C: 70;
+$porcent-vue: 60;
 
 @function strokeDashoffset($num) {
     @return 440 - (440 * $num) / 100;
@@ -88,6 +89,10 @@ $porcent-C: 70;
     &-C {
         animation: anim_circle-C 3s ease-in-out forwards;
     }
+
+    &-vue {
+        animation: anim_circle-vue 3s ease-in-out forwards;
+    }
 }
 
 .progressbar__text {
@@ -154,5 +159,11 @@ $porcent-C: 70;
 @keyframes anim_circle-C {
     to {
         stroke-dashoffset: strokeDashoffset($porcent-C);
+    }
+}
+
+@keyframes anim_circle-vue {
+    to {
+        stroke-dashoffset: strokeDashoffset($porcent-vue);
     }
 }
