@@ -26,7 +26,7 @@ function ModalWeb3({ account, toggleModal, ethPrice, gasPrice, balance, transact
                 </div>
                 <div className='center-simple'>
                     <p>Your Last Transactions:</p>
-                    {transactions.message === 'OK' && Object.keys(transactions).length !== 0 ? (transactions?.result.map((transaction, index) => {
+                    {transactions.message === 'OK' && Object.keys(transactions).length !== 0 ? (transactions?.result.reverse().slice(0, 4).map((transaction, index) => {
                         return (
                             <div key={index}>
                                 <a style={{ textDecoration: 'none' }} href={`https://etherscan.io/block/${transaction?.blockNumber}`} rel='noopener noreferrer' target='_blank'>
