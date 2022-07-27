@@ -44,8 +44,9 @@ function Connection({setIsClicked}) {
                 </div>
             )}
             {isShown && (
-                <div onMouseLeave={() => setIsShown(false)} style={{ paddingTop: '150px' }} className='center-simple'>
-                    <img className='metamask' src={Metamask} width={100} height={100} alt='metamask' onClick={MetamaskConnector} />
+                <div onMouseLeave={() => setIsShown(false)} style={{ paddingTop: '150px' }} className='center-simple-col metamask' onClick={MetamaskConnector}>
+                    <img src={Metamask} width={100} height={100} alt='metamask' />
+                    <p>Connect with metamask.</p>
                 </div>
             )}
             {showConfetti &&
@@ -54,7 +55,6 @@ function Connection({setIsClicked}) {
                     recycle={false}
                     width={width - 25}
                     height={height}
-                    
                     tweenDuration={30000}
                      />
             }

@@ -9,4 +9,15 @@
 
 .metamask {
     cursor: pointer;
+    animation: appear linear 5s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
