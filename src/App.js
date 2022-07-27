@@ -5,7 +5,7 @@ import ButtonSocial from './components/ButtonSocial'
 import ModalSocial from './components/ModalSocial'
 import Experiences from './components/Experiences'
 import Contact from './components/Contact'
-
+import About from './components/About'
 //pallette:
 // #000000
 // #14213d
@@ -28,6 +28,7 @@ function App() {
     <div>
       {modal && <ModalSocial toggleModal={toggleModal} />}
       <Hero />
+      <About />
       <Experiences />
       <Skills />
       <ButtonSocial toggleModal={toggleModal} />
