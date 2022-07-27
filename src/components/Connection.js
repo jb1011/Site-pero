@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Metamask from '../assets/metamask.png'
 import '../styles/connection.scss'
 import { useMediaQuery } from "react-responsive";
@@ -8,22 +8,38 @@ import { useWindowSize } from '../hooks/useWindowSize'
 import Confetti from 'react-confetti'
 import { scroller } from "react-scroll"
 
-function Connection({setIsClicked}) {
+function Connection() {
     const [isShown, setIsShown] = useState(false);
     const [showConfetti, setShowConfetti] = useState(false);
-    const { activate } = useWeb3React();
+    const [hasNotMetamask, setHasNotMetamask] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
+    const { activate, account } = useWeb3React();
     const isMobile = useMediaQuery({ maxWidth: 890 })
 
     const MetamaskConnector = async () => {
         try {
             await activate(injected);
-            setShowConfetti(true)
-            scrollToTop()
             setIsClicked(true)
         } catch (ex) {
             console.log(ex);
         }
     };
+
+    useEffect(() => {
+        const isAccount = () => {
+            if (isClicked) {
+                if (account) {
+                    setShowConfetti(true)
+                    scrollToTop()
+                }
+                else {
+                    setShowConfetti(false)
+                    setHasNotMetamask(true)
+                }
+            }
+        }
+        isAccount()
+    }, [account, isClicked])
 
     const scrollToTop = () => {
         scroller.scrollTo("top", {
@@ -49,6 +65,12 @@ function Connection({setIsClicked}) {
                     <p>Connect with metamask.</p>
                 </div>
             )}
+            {
+                hasNotMetamask &&
+                <div className='center-simple'>
+                    <p style={{ color: 'red' }}>Install metamask on your browser</p>
+                </div>
+            }
             {showConfetti &&
                 <Confetti
                     numberOfPieces={5000}
@@ -56,7 +78,7 @@ function Connection({setIsClicked}) {
                     width={width - 25}
                     height={height}
                     tweenDuration={30000}
-                     />
+                />
             }
         </>
     )

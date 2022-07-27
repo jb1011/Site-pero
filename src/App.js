@@ -19,8 +19,6 @@ import { Web3ReactProvider } from '@web3-react/core';
 
 function App() {
   const [modal, setModal] = useState(false)
-  const [isClicked, setIsClicked] = useState(false)
-
 
   const toggleModal = () => {
     setModal(!modal)
@@ -35,13 +33,13 @@ function App() {
     <Web3ReactProvider getLibrary={getLibrary} >
       {modal && <ModalSocial toggleModal={toggleModal} />}
       <div className="top">
-        <Hero isClicked={isClicked} />
+        <Hero />
       </div>
       <About />
       <Skills />
       <Experiences />
       <ButtonSocial toggleModal={toggleModal} />
-      <Connection setIsClicked={setIsClicked}/>
+      <Connection />
       <div style={{ paddingTop: '50px', marginTop: '50px' }} />
       <Contact />
     </Web3ReactProvider>
