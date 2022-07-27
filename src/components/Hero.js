@@ -56,7 +56,7 @@ function Hero({ isClicked }) {
                     <div className='text-circle'>
                         {isClicked ? (<>
                             <h1>Congratulations</h1>
-                            <h3>You have connected you wallet</h3>
+                            <h3>You have connected your wallet</h3>
                             <h3 style={{cursor: 'pointer', textDecoration: 'underline'}} onClick={() => setModal(!modal)}>Click here.</h3>
                         </>
                         ) : (
