@@ -1,9 +1,7 @@
 import React from 'react'
 import '../styles/hero.scss'
-// import { useMediaQuery } from "react-responsive";
 
 function Hero() {
-    // const isMobile = useMediaQuery({ minWidth: 890 })
 
     return (
         <>
