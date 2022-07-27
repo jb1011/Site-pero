@@ -17,7 +17,7 @@ function Skills() {
 
   return (
     <>
-      <div style={{ paddingTop: '150px' }} />
+      <div style={{ paddingTop: '50px' }} />
       <h1 style={{ textAlign: 'center' }}>Skills</h1>
       <InView as='div' onChange={(inView) => triggerAnim(inView)}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>

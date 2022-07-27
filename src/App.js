@@ -32,7 +32,7 @@ function App() {
       <Experiences />
       <Skills />
       <ButtonSocial toggleModal={toggleModal} />
-      <div style={{paddingTop: '50px', marginTop:'50px', borderTop: '1px solid #fca311'}}/>
+      <div style={{paddingTop: '50px', marginTop:'50px'}}/>
       <Contact />
     </div>
   );

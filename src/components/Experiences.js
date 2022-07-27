@@ -15,7 +15,6 @@ function Experiences() {
         setModal(!modal)
     }
     const isMobile = useMediaQuery({ maxWidth: 890 })
-    console.log(isMobile)
     return (
         <div>
             {modal && <ModalExperience toggleModal={toggleModal} id={id} />}

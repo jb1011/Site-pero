@@ -8,7 +8,7 @@ function Hero() {
     return (
         <>
             <div className='center-page-col'>
-                <div className='circle pulse'>
+                <div className='sun'>
                     <div className='text-circle'>
                         <h1>Jean-Baptiste Demenet</h1>
                         <h3 >Front-end developer.</h3>
