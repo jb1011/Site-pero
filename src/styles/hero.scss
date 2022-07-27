@@ -3,13 +3,33 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+}
+
+.center-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .circle {
     stroke-width: clamp(20px, 10vw + 10px, 30%);
     width: 500px;
     height: 500px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+    background-color: #fca311;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.circle {
+    stroke-width: clamp(20px, 10vw + 10px, 30%);
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     box-shadow: 0px 0px 1px 1px #0000001a;
     background-color: #fca311;

@@ -4,7 +4,7 @@ import Skills from './components/Skills'
 import ButtonSocial from './components/ButtonSocial'
 import ModalSocial from './components/ModalSocial'
 import Experiences from './components/Experiences'
-
+import Contact from './components/Contact'
 
 //pallette:
 // #000000
@@ -31,6 +31,8 @@ function App() {
       <Experiences />
       <Skills />
       <ButtonSocial toggleModal={toggleModal} />
+      <div style={{paddingTop: '50px', marginTop:'50px', borderTop: '1px solid #fca311'}}/>
+      <Contact />
     </div>
   );
 }

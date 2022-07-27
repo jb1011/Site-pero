@@ -5,14 +5,14 @@ import { InView } from 'react-intersection-observer'
 function Skills() {
 
   const triggerAnim = (inView) => {
-    inView ? document.getElementById('html').classList.add("circle-html") : document.getElementById('html').classList.add("")
-    inView ? document.getElementById('scss').classList.add("circle-scss") : document.getElementById('scss').classList.add("")
-    inView ? document.getElementById('js').classList.add("circle-js") : document.getElementById('js').classList.add("")
-    inView ? document.getElementById('ts').classList.add("circle-ts") : document.getElementById('ts').classList.add("")
-    inView ? document.getElementById('node').classList.add("circle-node") : document.getElementById('node').classList.add("")
-    inView ? document.getElementById('ethersjs').classList.add("circle-EthersJs") : document.getElementById('ethersjs').classList.add("")
-    inView ? document.getElementById('web3').classList.add("circle-Web3") : document.getElementById('web3').classList.add("")
-    inView ? document.getElementById('c').classList.add("circle-C") : document.getElementById('c').classList.add("")
+    inView ? document.getElementById('html').classList.add("circle-html") : document.getElementById('html').classList.add(undefined)
+    inView ? document.getElementById('scss').classList.add("circle-scss") : document.getElementById('scss').classList.add(undefined)
+    inView ? document.getElementById('js').classList.add("circle-js") : document.getElementById('js').classList.add(undefined)
+    inView ? document.getElementById('ts').classList.add("circle-ts") : document.getElementById('ts').classList.add(undefined)
+    inView ? document.getElementById('node').classList.add("circle-node") : document.getElementById('node').classList.add(undefined)
+    inView ? document.getElementById('ethersjs').classList.add("circle-EthersJs") : document.getElementById('ethersjs').classList.add(undefined)
+    inView ? document.getElementById('web3').classList.add("circle-Web3") : document.getElementById('web3').classList.add(undefined)
+    inView ? document.getElementById('c').classList.add("circle-C") : document.getElementById('c').classList.add(undefined)
   }
 
   return (
