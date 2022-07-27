@@ -1,10 +1,17 @@
 import React from 'react'
 import '../styles/modal-social.scss'
 import Text from '../store/experiences.json'
+import { motion } from "framer-motion"
 
 function ModalExperience({ toggleModal, id }) {
     return (
-        <div className='layout' onClick={toggleModal}>
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className='layout'
+            onClick={toggleModal}
+        >
             <div className='modal center-simple-col' onClick={(e) => e.stopPropagation()}>
                 <div style={{ padding: '20px' }}>
                     <h3 style={{ textAlign: 'center' }}>{Text[id].title}</h3>
@@ -19,7 +26,7 @@ function ModalExperience({ toggleModal, id }) {
 
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 
