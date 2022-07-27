@@ -54,13 +54,13 @@ function Connection() {
         <>
             {!isShown && (
                 <div style={{ paddingTop: '150px' }} className='center-simple'>
-                    <div onMouseEnter={() => setIsShown(true)} className='cache'>
+                    <div style={{height: '150px'}} onMouseEnter={() => setIsShown(true)} className='cache'>
                         {isMobile ? <p>Click me.</p> : <p>Hover me.</p>}
                     </div>
                 </div>
             )}
             {isShown && (
-                <div onMouseLeave={() => setIsShown(false)} style={{ paddingTop: '150px' }} className='center-simple-col metamask' onClick={MetamaskConnector}>
+                <div onMouseLeave={() => setIsShown(false)} style={{ paddingTop: '150px', height: '150px' }} className='center-simple-col metamask' onClick={MetamaskConnector}>
                     <img src={Metamask} width={100} height={100} alt='metamask' />
                     <p>Connect with metamask.</p>
                 </div>
