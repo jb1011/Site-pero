@@ -27,11 +27,12 @@ function ModalWeb3({ account, toggleModal, ethPrice, gasPrice, balance, transact
                         <p>Your Wallet Balance: <span style={{ color: '#fca311' }}>{ethers.utils.formatEther(balance).substring(0, 5)} eth</span></p>
                     </a>
                 </div>
-                <div className={isMobile ? 'center-simple-col' : 'center-simple'}>
+                {/* <div className={isMobile ? 'center-simple-col' : 'center-simple'}> */}
                     <p>Your Last Transactions:</p>
-                    {transactions.message === 'OK' && Object.keys(transactions).length !== 0 ? (transactions?.result.reverse().slice(0, 5).map((transaction, index) => {
+                <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', gap: 10 }}>
+                    {transactions.message === 'OK' && Object.keys(transactions).length !== 0 ? (transactions?.result.reverse().slice(0, 4).map((transaction, index) => {
                         return (
-                            <div key={index}>
+                            <div  key={index}>
                                 <a style={{ textDecoration: 'none' }} href={`https://etherscan.io/block/${transaction?.blockNumber}`} rel='noopener noreferrer' target='_blank'>
                                     <p style={{ color: '#fca311' }}>{transaction?.blockNumber}</p>
                                 </a>
