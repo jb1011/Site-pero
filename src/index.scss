@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Raleway:wght@400;800&display=swap');
 
+@font-face {
+  font-family: "light";
+  src: local("BasierCircle-Regular"),
+    url("./assets/fonts/BasierCircle-Regular.woff") format("woff")
+}
+
+@font-face {
+  font-family: "bold";
+  src: local("BasierCircle-Regular"),
+    url("./assets/fonts/BasierCircle-Bold.woff") format("woff")
+}
 
 body,
 html {
@@ -7,6 +18,14 @@ html {
   width: 100%;
   margin: 0;
   background-color: #14213d;
+}
+
+p {
+  font-family: 'light', sans-serif;
+}
+
+div p { 
+  font-family: 'light', sans-serif;
 }
 
 

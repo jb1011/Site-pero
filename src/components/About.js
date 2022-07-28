@@ -7,7 +7,7 @@ function About() {
             <h1>About me.</h1>
             <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', padding: '20px', textAlign: 'center' }}>
 
-                <p >Hi! I am a front-end developer from Paris, France. I specialized in Web3 after I went to school 42 in Paris.
+                <p>Hi! I am a front-end developer from Paris, France. I specialized in Web3 after I went to school 42 in Paris.
                     I worked 6 months for a big decentralized exchange on
                     <span>
                         <span> Avalanche </span><img  alt='Avax' src={Avax} width={15} height={15} />

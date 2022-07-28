@@ -6,7 +6,7 @@ import axios from 'axios'
 
 const API_KEY = `M4ARD2Z4QDNPQU5W2ASZY9ASIH74CFYPUY`
 
-function Hero({ isClicked }) {
+function Hero() {
     const[modal, setModal] = useState(false)
     const [ethPrice, setEthPrice] = useState({})
     const [gasPrice, setGasPrice] = useState({})
@@ -55,7 +55,7 @@ function Hero({ isClicked }) {
                 <div className='sun'>
                     <div className='text-circle'>
                         {account ? (<>
-                            <h1 style={{cursor: 'pointer', textDecoration: 'underline'}} onClick={() => setModal(!modal)}>Click here.</h1>
+                            <h1 style={{cursor: 'pointer'}} onClick={() => setModal(!modal)}>Click here.</h1>
                         </>
                         ) : (
                             <>

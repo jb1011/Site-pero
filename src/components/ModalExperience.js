@@ -12,7 +12,7 @@ function ModalExperience({ toggleModal, id }) {
             className='layout'
             onClick={toggleModal}
         >
-            <div className='modal center-simple-col' onClick={(e) => e.stopPropagation()}>
+            <div className='modal center-simple-col' onMouseLeave={() => toggleModal()} onClick={(e) => e.stopPropagation()}>
                 <div style={{ padding: '20px' }}>
                     <h3 style={{ textAlign: 'center' }}>{Text[id].title}</h3>
                     <p>{Text[id].description}</p>
