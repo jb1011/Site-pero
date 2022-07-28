@@ -3,18 +3,18 @@ import '../styles/hero.scss'
 import ModalWeb3 from './ModalWeb3'
 import { useWeb3React } from "@web3-react/core";
 import axios from 'axios'
+import { useMediaQuery } from "react-responsive";
 
 const API_KEY = `M4ARD2Z4QDNPQU5W2ASZY9ASIH74CFYPUY`
 
 function Hero() {
-    const[modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false)
     const [ethPrice, setEthPrice] = useState({})
     const [gasPrice, setGasPrice] = useState({})
     const [balance, setBalance] = useState({})
     const [transactions, setTransactions] = useState([])
-
-
     const { account } = useWeb3React();
+    const isMobile = useMediaQuery({ maxWidth: 890 })
 
     const toggleModal = () => {
         setModal(!modal)
@@ -53,14 +53,23 @@ function Hero() {
             {modal && <ModalWeb3 toggleModal={toggleModal} account={account} ethPrice={ethPrice.result?.ethusd} gasPrice={gasPrice?.result} balance={balance?.result} transactions={transactions} />}
             <div className='center-page-col'>
                 <div className='sun'>
-                    <div className='text-circle'>
+                    <div className={isMobile ? 'text-circle-sm' : 'text-circle'}>
                         {account ? (<>
-                            <h1 style={{cursor: 'pointer'}} onClick={() => setModal(!modal)}>Click here.</h1>
+                            <h1 style={{ cursor: 'pointer' }} onClick={() => setModal(!modal)}>Click here.</h1>
                         </>
                         ) : (
                             <>
-                                <h1>Jean-Baptiste Demenet</h1>
-                                <h3 >Front-end developer.</h3>
+                                {isMobile ? (
+                                    <>
+                                        <h3>Jean-Baptiste Demenet</h3>
+                                            <p style={{ fontFamily: 'Lobster Two'}}>Front-end developer.</p>
+                                    </>
+                                ) : (
+                                    <>
+                                        <h1>Jean-Baptiste Demenet</h1>
+                                        <h3>Front-end developer.</h3>
+                                    </>
+                                )}
                             </>
                         )}
                     </div>

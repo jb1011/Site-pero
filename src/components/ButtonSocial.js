@@ -5,8 +5,8 @@ function ButtonSocial({ toggleModal }) {
     return (
         <div onClick={toggleModal}>
             <div className='circle-small pulse-small'>
-                <div className='text-circle'>
-                    <p>Find me.</p>
+                <div className=''>
+                    <p style={{ fontFamily: 'Lobster Two' }}>Find me.</p>
                 </div>
             </div>
         </div>
