@@ -4,7 +4,7 @@ import Avax from '../assets/avax.png'
 function About() {
     return (
         <div className='center-simple-col'>
-            <h1>About me.</h1>
+            <h1>About me</h1>
             <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', padding: '20px', textAlign: 'center' }}>
 
                 <p>Hi! I am a front-end developer from Paris, France. I specialized in Web3 after I went to school 42 in Paris.

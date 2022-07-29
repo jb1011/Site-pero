@@ -55,7 +55,7 @@ function Connection() {
             {!isShown && (
                 <div style={{ paddingTop: '150px' }} className='center-simple'>
                     <div style={{height: '150px'}} onMouseEnter={() => setIsShown(true)} className='cache'>
-                        {isMobile ? <p>Click me.</p> : <p>Hover me.</p>}
+                        {isMobile ? <p>Click me...</p> : <p>Hover me...</p>}
                     </div>
                 </div>
             )}
