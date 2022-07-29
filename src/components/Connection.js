@@ -48,7 +48,6 @@ function Connection() {
             smooth: "easeInOutQuart",
         })
     }
-
     const { width, height } = useWindowSize()
     return (
         <>
@@ -75,7 +74,7 @@ function Connection() {
                 <Confetti
                     numberOfPieces={5000}
                     recycle={false}
-                    width={width - 25}
+                    width={isMobile ? width : width-15}
                     height={height}
                     tweenDuration={30000}
                 />
