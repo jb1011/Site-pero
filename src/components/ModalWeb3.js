@@ -38,7 +38,7 @@ function ModalWeb3({ account, toggleModal, ethPrice, gasPrice, balance, transact
                             </div>
                         )
                     })) : (
-                        <p>No historical transactions on ethereum</p>
+                        <p style={{width: '300%'}}>No historical transactions on ethereum</p>
                     )}
                 </div>
             </div>

@@ -47,7 +47,7 @@ function Hero() {
                 setTransactions(res.data)
             })
     }, [account])
-
+    console.log(transactions)
     return (
         <>
             {modal && <ModalWeb3 toggleModal={toggleModal} account={account} ethPrice={ethPrice.result?.ethusd} gasPrice={gasPrice?.result} balance={balance?.result} transactions={transactions} />}
