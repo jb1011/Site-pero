@@ -15,8 +15,8 @@ function ModalExperience({ toggleModal, id }) {
         >
             <div className='modal center-simple-col' onClick={(e) => e.stopPropagation()}>
                 <div style={{ padding: '20px' }}>
-                    <h3 style={{ textAlign: 'center' }}>{Text[id].title}</h3>
-                    <p>{Text[id].description}</p>
+                    <h3 style={{ textAlign: 'center', marginBottom: 0, paddingBottom: '20px' }}>{Text[id].title}</h3>
+                    <p style={{whiteSpace: 'pre-line', verticalAlign: 'bottom'}}>{Text[id].description}</p>
                     <div style={{ display: 'flex', gap: 20, justifyContent: 'center' }}>
                         <p>Time spent: {Text[id].date}</p>
                         <a style={{ textDecoration: 'none' }} href={Text[id].site} className="fa-footer" rel='noopener noreferrer' target='_blank'>

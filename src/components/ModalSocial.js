@@ -11,7 +11,7 @@ function ModalSocial({ toggleModal }) {
             className='layout'
             onClick={toggleModal}
         >
-            <div className='modal center-simple-col' onClick={(e) => e.stopPropagation()}>
+            <div style={{padding: '30px'}} className='modal center-simple-col' onClick={(e) => e.stopPropagation()}>
                 <div className='center-simple'>
                     <a href="https://www.linkedin.com/in/jean-baptiste-d-6309091a6/" className="fa-footer" rel='noopener noreferrer' target='_blank'>
                         <i className="fa fa-linkedin fa-3x color-icon"></i>
