@@ -17,15 +17,13 @@ function ModalExperience({ toggleModal, id }) {
                 <div style={{ padding: '20px' }}>
                     <h3 style={{ textAlign: 'center', marginBottom: 0, paddingBottom: '20px' }}>{Text[id].title}</h3>
                     <p style={{whiteSpace: 'pre-line', verticalAlign: 'bottom'}}>{Text[id].description}</p>
-                    <div style={{ display: 'flex', gap: 20, justifyContent: 'center' }}>
+                    <div style={{ display: 'flex', gap: 20, justifyContent: 'center', paddingTop: '20px' }}>
                         <p>Time spent: {Text[id].date}</p>
                         <a style={{ textDecoration: 'none' }} href={Text[id].site} className="fa-footer" rel='noopener noreferrer' target='_blank'>
                             <p style={{ color: '#fca311' }} >Link</p>
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </motion.div>
     )
