@@ -3,7 +3,7 @@
         "id": 0,
         "title": "Dripperz",
         "date": "1 month",
-        "description": "UI and Web3 implementation.",
+        "description": "Designed components with clients and UI integration. Web3 implementation hand in hand with the Smart contract developer.",
         "site": "https://dripperzcyber.club/"
        
     },
@@ -11,21 +11,21 @@
         "id": 1,
         "title": "Pangolin Exchange",
         "date": "6 months",
-        "description": "Cross chain implementation for the decentralized exchange. Airdrop feature implementation. APIs implementation. UI maintenance. Wormhole bridge/ Axelar bridge implementation.",
+        "description": "Cross chain implementation for the decentralized exchange. Airdrop feature implementation. APIs implementation. UI maintenance. UI integration. Creation of multiple components. Wormhole bridge/ Axelar bridge implementation.",
         "site": "https://pangolin.exchange/"
     },
     {
         "id": 2,
         "title": "Farandole",
         "date": "2 months",
-        "description": "Web3 calls, UI implementation, website responsivity.",
+        "description": "In charge of the website responsivity. Integrated differents wallets. Implemented multiple web3 calls for the application. UI components creation and integration.",
         "site": "https://www.farandole.io/"
     },
     {
         "id": 3,
         "title": "Hyro - Hackaton project",
         "date": "48 hours",
-        "description": "This unfinished project was a very ambitious project for the Ethcc hackathon 2022.",
+        "description": "This unfinished project was a very ambitious project for the Ethcc hackathon 2022. Most of the web3 calls have been deactivated since the project in on hold at the moment.",
         "site": "https://hyro-six.vercel.app/"
     }
 ]

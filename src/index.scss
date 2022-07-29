@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Raleway:wght@400;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
 
 body,
 html {
@@ -14,11 +14,12 @@ p {
   font-family: 'Rubik', cursive;
   font-size: 400;
   margin: 0.2rem;
+  color: #e5e5e5;
 }
 
 div p { 
   font-family: 'Rubik', cursive;
-  font-size: 400;
+  font-weight: 500;
 }
 
 
@@ -40,11 +41,7 @@ h3 {
   color: #e5e5e5;
 }
 
-p {
-  font-family: 'Lobster Two', cursive;
-  font-size: 1rem;
-  color: #e5e5e5;
-}
+
 
 .center-simple {
   display: flex;
