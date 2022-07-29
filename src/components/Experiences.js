@@ -28,7 +28,7 @@ function Experiences() {
             </div>
             {isShown === 1 ? <p style={{ textAlign: 'center', height: '20px' }}>Click me.</p> : <p style={{ height: '20px' }}></p>}
             <div style={{ paddingTop: '150px' }} />
-            <h3 style={{ textAlign: 'center' }}>Hackatons:</h3>
+            <h3 style={{ textAlign: 'center' }}>Hackaton</h3>
             <div className="exp">
                 <img className={isMobile ? 'img-small' : 'img'} onMouseEnter={() => setIsShown(2)} onMouseLeave={() => setIsShown(false)} onClick={() => { toggleModal(); setId(3) }} src={Hyro} alt="Hyro" />
             </div>

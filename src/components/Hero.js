@@ -5,8 +5,6 @@ import { useWeb3React } from "@web3-react/core";
 import axios from 'axios'
 import { useMediaQuery } from "react-responsive";
 
-const API_KEY = `M4ARD2Z4QDNPQU5W2ASZY9ASIH74CFYPUY`
-
 function Hero() {
     const [modal, setModal] = useState(false)
     const [ethPrice, setEthPrice] = useState({})
@@ -21,33 +19,33 @@ function Hero() {
     }
 
     useEffect(() => {
-        axios.get(`https://api.etherscan.io/api?module=stats&action=ethprice&apikey=${API_KEY}`)
+        axios.get(`https://api.etherscan.io/api?module=stats&action=ethprice&apikey=${process.env.API_KEY}`)
             .then(res => {
                 setEthPrice(res.data)
             })
     }, [account])
 
     useEffect(() => {
-        axios.get(`https://api.etherscan.io/api?module=gastracker&action=gasestimate&gasprice=2000000000&apikey=${API_KEY}`)
+        axios.get(`https://api.etherscan.io/api?module=gastracker&action=gasestimate&gasprice=2000000000&apikey=${process.env.API_KEY}`)
             .then(res => {
                 setGasPrice(res.data)
             })
     }, [account])
 
     useEffect(() => {
-        axios.get(`https://api.etherscan.io/api?module=account&action=balance&address=${account}&tag=latest&apikey=${API_KEY}`)
+        axios.get(`https://api.etherscan.io/api?module=account&action=balance&address=${account}&tag=latest&apikey=${process.env.API_KEY}`)
             .then(res => {
                 setBalance(res.data)
             })
     }, [account])
 
     useEffect(() => {
-        axios.get(`https://api.etherscan.io/api?module=account&action=txlist&address=${account}&startblock=0&endblock=99999999&page=1&offset=10&sort=asc&apikey=${API_KEY}`)
+        axios.get(`https://api.etherscan.io/api?module=account&action=txlist&address=${account}&startblock=0&endblock=99999999&page=1&offset=10&sort=asc&apikey=${process.env.API_KEY}`)
             .then(res => {
                 setTransactions(res.data)
             })
     }, [account])
-    console.log(transactions)
+
     return (
         <>
             {modal && <ModalWeb3 toggleModal={toggleModal} account={account} ethPrice={ethPrice.result?.ethusd} gasPrice={gasPrice?.result} balance={balance?.result} transactions={transactions} />}

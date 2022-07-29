@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
+import Skills2 from './components/Skills2'
 import ButtonSocial from './components/ButtonSocial'
 import ModalSocial from './components/ModalSocial'
 import Experiences from './components/Experiences'
@@ -36,6 +37,7 @@ function App() {
       </div>
       <About />
       <Skills />
+      <Skills2 />
       <Experiences />
       <ButtonSocial toggleModal={toggleModal} />
       <Connection />
