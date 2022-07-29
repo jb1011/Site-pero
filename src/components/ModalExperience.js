@@ -4,6 +4,7 @@ import Text from '../store/experiences.json'
 import { motion } from "framer-motion"
 
 function ModalExperience({ toggleModal, id }) {
+
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
