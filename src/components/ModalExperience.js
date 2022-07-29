@@ -15,7 +15,7 @@ function ModalExperience({ toggleModal, id }) {
         >
             <div className='modal center-simple-col' onClick={(e) => e.stopPropagation()}>
                 <div style={{ padding: '20px' }}>
-                    <h3 style={{ textAlign: 'center', marginBottom: 0, paddingBottom: '20px' }}>{Text[id].title}</h3>
+                    <h3 style={{ textAlign: 'center', marginBottom: 0 }}>{Text[id].title}</h3>
                     <p style={{whiteSpace: 'pre-line', verticalAlign: 'bottom'}}>{Text[id].description}</p>
                     <div style={{ display: 'flex', gap: 20, justifyContent: 'center', paddingTop: '20px' }}>
                         <p>Time spent: {Text[id].date}</p>
