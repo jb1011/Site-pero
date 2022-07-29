@@ -4,7 +4,7 @@ import '../styles/button-social.scss'
 function ButtonSocial({ toggleModal }) {
     return (
         <div onClick={toggleModal}>
-            <div className='circle-small pulse-small'>
+            <div className='sun-sm'>
                 <div className=''>
                     <p style={{ fontFamily: 'Lobster Two' }}>Find me.</p>
                 </div>

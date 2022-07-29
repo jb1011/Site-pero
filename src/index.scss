@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Raleway:wght@400;800&display=swap');
 
-@font-face {
-  font-family: "light";
-  src: local("BasierCircle-Regular"),
-    url("./assets/fonts/BasierCircle-Regular.woff") format("woff")
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-@font-face {
-  font-family: "bold";
-  src: local("BasierCircle-Regular"),
-    url("./assets/fonts/BasierCircle-Bold.woff") format("woff")
-}
 
 body,
 html {
@@ -21,11 +12,14 @@ html {
 }
 
 p {
-  font-family: 'light', sans-serif;
+  font-family: 'Rubik', cursive;
+  font-size: 400;
+  margin: 0.2rem;
 }
 
 div p { 
-  font-family: 'light', sans-serif;
+  font-family: 'Rubik', cursive;
+  font-size: 400;
 }
 
 

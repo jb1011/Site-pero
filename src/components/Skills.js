@@ -24,7 +24,7 @@ function Skills() {
       <h1 style={{ textAlign: 'center' }}>Skills</h1>
       <InView as='div' onChange={(inView) => triggerAnim(inView)}>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <div style={{fontFamily: 'light'}} className='container__progressbars'>
+          <div style={{ fontFamily: 'Rubik'}} className='container__progressbars'>
             <div className="progressbar">
               <svg className="progressbar__svg">
                 <circle id='react' cx="80" cy="80" r="70" className="progressbar__svg-circle shadow-html"> </circle>
