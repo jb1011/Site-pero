@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "src": "images/react.png",
+        "alt": "React",
+        "radius": "0"
+    },
+    {
+        "id": 1,
+        "src": "images/typescript.svg",
+        "alt": "typescript",
+        "radius": "15px"
+    },
+    {
+        "id": 2,
+        "src": "images/javascript.png",
+        "alt": "javascript",
+        "radius": "15px"
+    },
+    {
+        "id": 3,
+        "src": "images/vue.png",
+        "alt": "vue",
+        "radius": "0"
+    },
+    {
+        "id": 4,
+        "src": "images/scss.png",
+        "alt": "scss",
+        "radius": "50%"
+    },
+    {
+        "id": 5,
+        "src": "images/ethersjs.png",
+        "alt": "ethersjs",
+        "radius": "15px"
+    },
+    {
+        "id": 6,
+        "src": "images/web3.png",
+        "alt": "web3",
+        "radius": "0"
+    },
+    {
+        "id": 7,
+        "src": "images/node.png",
+        "alt": "node",
+        "radius": "0"
+    }
+]
