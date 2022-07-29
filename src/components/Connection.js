@@ -74,7 +74,7 @@ function Connection() {
                 <Confetti
                     numberOfPieces={5000}
                     recycle={false}
-                    width={isMobile ? width : width-15}
+                    width={isMobile ? width : width-20}
                     height={height}
                     tweenDuration={30000}
                 />
