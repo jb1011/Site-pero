@@ -22,9 +22,9 @@ function Experiences() {
             <div style={{ paddingTop: '150px' }} />
             <h1 style={{ textAlign: 'center' }}>Experiences</h1>
             <div className={isMobile ? 'exp-small' : 'exp'}>
-                <img className={isMobile ? 'img-small' : 'img'} onMouseEnter={() => setIsShown(1)} onMouseLeave={() => setIsShown(false)} onClick={() => { toggleModal(); setId(2) }} src={Farandole} alt="Farandole" />
                 <img style={{borderRadius: '50%'}} className={isMobile ? 'img-small' : 'img'} onMouseEnter={() => setIsShown(1)} onMouseLeave={() => setIsShown(false)} onClick={() => { toggleModal(); setId(0) }} src={Dripperz} alt="Dripperz" />
                 <img className={isMobile ? 'img-small' : 'img'} onMouseEnter={() => setIsShown(1)} onMouseLeave={() => setIsShown(false)} onClick={() => { toggleModal(); setId(1) }} src={PNG} alt="PNG" />
+                <img className={isMobile ? 'img-small' : 'img'} onMouseEnter={() => setIsShown(1)} onMouseLeave={() => setIsShown(false)} onClick={() => { toggleModal(); setId(2) }} src={Farandole} alt="Farandole" />
             </div>
             {isShown === 1 ? <p style={{ textAlign: 'center', height: '20px' }}>Click me.</p> : <p style={{ height: '20px' }}></p>}
             <div style={{ paddingTop: '150px' }} />
