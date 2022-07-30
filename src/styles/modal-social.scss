@@ -34,3 +34,17 @@
 .color-icon {
     color: #fca311;
 }
+
+.disappear {
+    animation: animate 0.3s linear;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

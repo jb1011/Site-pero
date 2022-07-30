@@ -3,13 +3,22 @@ import '../styles/modal-social.scss'
 import { motion } from "framer-motion"
 
 function ModalSocial({ toggleModal }) {
+
+    const onLayerClick = () => {
+        document.getElementById('layout').classList.add('disappear');
+
+        setTimeout(() => {
+            toggleModal()
+        }, 300)
+    }
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className='layout'
-            onClick={toggleModal}
+            onClick={onLayerClick}
+            id='layout'
         >
             <div style={{padding: '30px'}} className='modal center-simple-col' onClick={(e) => e.stopPropagation()}>
                 <div className='center-simple'>

@@ -6,6 +6,14 @@ import { useMediaQuery } from "react-responsive";
 
 function ModalWeb3({ account, toggleModal, ethPrice, gasPrice, balance, transactions }) {
 
+    const onLayerClick = () => {
+        document.getElementById('layout').classList.add('disappear');
+
+        setTimeout(() => {
+            toggleModal()
+        }, 300)
+    }
+
     const isMobile = useMediaQuery({ maxWidth: 890 })
     return (
         <motion.div
@@ -13,7 +21,8 @@ function ModalWeb3({ account, toggleModal, ethPrice, gasPrice, balance, transact
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className='layout'
-            onClick={toggleModal}
+            onClick={onLayerClick}
+            id='layout'
         >
             <div style={{ lineHeight: '0px' }} className='modal-web3 center-simple-col' onClick={(e) => e.stopPropagation()}>
                 <h3>Quick Overview:</h3>
