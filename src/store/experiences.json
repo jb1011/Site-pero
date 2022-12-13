@@ -3,7 +3,7 @@
         "id": 0,
         "title": "Dripperz",
         "date": "1 month",
-        "description": "- Designed components with clients\n- UI integration.\n- Web3 implementation hand in hand with the Smart contract developer.",
+        "description": "\n- Designed components with clients\n- UI integration.\n- Web3 implementation hand in hand with the Smart contract developer.",
         "site": "https://dripperzcyber.club/"
        
     },
@@ -23,9 +23,23 @@
     },
     {
         "id": 3,
+        "title": "Ondefy",
+        "date": "5 months",
+        "description": "\n- Front-end developper\n- UI integration.\n- Code optimization",
+        "site": "https://www.ondefy.com/"
+    },
+    {
+        "id": 4,
+        "title": "Room420",
+        "date": "1 month",
+        "description": "\n- Front-end developper\n- UI integration.\n- Mint",
+        "site": "https://room420.io/"
+    },
+    {
+        "id": 5,
         "title": "Hyro - Hackaton project",
         "date": "48 hours",
-        "description": "This unfinished project was a very ambitious project for the Ethcc hackathon 2022. Most of the web3 calls have been deactivated since the project in on hold at the moment.",
+        "description": "Price winner of the Paris ETHCC hackaton 2022. Most of the web3 calls have been deactivated since the project in on hold at the moment.",
         "site": "https://hyro-six.vercel.app/"
     }
 ]
